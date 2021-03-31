@@ -4,15 +4,18 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .details {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .details-img {
   width: 100%;
 }
+
 .details .more-inf {
   font-family: fantasy, cursive;
 }
@@ -22,16 +25,19 @@ body {
     text-align: center;
   }
 }
+
 .centered-main-page-element {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .task {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
+
 .task-row {
   display: flex;
 }
@@ -58,6 +64,7 @@ input, .delete, .edit {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .delete:hover, .edit:hover {
   color: #3a3a3a;
 }
@@ -95,9 +102,11 @@ input[type="text"]:focus {
   display: block;
   margin: 0 0 20px;
 }
+
 input#new-task {
   width: 318px;
 }
+
 #element-list > button:hover {
   color: #0fc57c;
 }
@@ -107,11 +116,11 @@ input#new-task {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .list-item > * {
   vertical-align: middle;
 }
