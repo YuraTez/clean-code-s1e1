@@ -10,7 +10,7 @@
 
 var taskInput=document.getElementById("new-task");//Add a new task.
 var addButton=document.getElementsByTagName("button")[0];//first button
-var TaskHolder=document.getElementById("incompleteTasks");//ul of #incompleteTasks
+var TaskHolder=document.getElementById("incomplete-tasks");//ul of #incompleteTasks
 var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
 
 
@@ -167,10 +167,11 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     //Bind taskCompleted to checkBoxEventHandler.
     checkBox.onchange=checkBoxEventHandler;
 }
-
+    console.log(TaskHolder);
 //cycle over TaskHolder ul list items
 //for each list item
 for (var i=0; i<TaskHolder.children.length;i++){
+
 
     //bind events to list items chldren(tasksCompleted)
     bindTaskEvents(TaskHolder.children[i],taskCompleted);
